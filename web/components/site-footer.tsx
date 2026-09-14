@@ -2,7 +2,9 @@ import Link from "next/link";
 import { ArrowRight, Github } from "lucide-react";
 import { companyAddress, companyLegalName, legalLinks, sooappsUrl } from "../lib/legal";
 import {
+  alternativeToUrl,
   contactEmail,
+  peerlistUrl,
   seoLinks,
   signInUrl,
   signUpUrl,
@@ -119,7 +121,49 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-12 flex flex-wrap items-center justify-between gap-4 border-t border-line pt-6">
-          <p className="font-mono text-xs text-fg-muted">© {year} Sooapps · Sooauth</p>
+          <div className="flex flex-wrap items-center gap-4">
+            <p className="font-mono text-xs text-fg-muted">© {year} Sooapps · Sooauth</p>
+            <a
+              href={alternativeToUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center opacity-85 transition-opacity hover:opacity-100"
+              title="Sooauth on AlternativeTo"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="https://alternativeto.net/static/badges/badge-compact-color.svg"
+                alt="Sooauth | AlternativeTo"
+                width={112}
+                height={36}
+                className="h-[28px] w-auto"
+              />
+            </a>
+            <a
+              href={peerlistUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center opacity-85 transition-opacity hover:opacity-100"
+              title="Sooauth on Peerlist Launchpad"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="https://peerlist.io/api/v1/projects/embed/PRJH6A7QJD7ARJA9QIOQOP9GRGB77O?showUpvote=false&theme=dark"
+                alt="Sooauth on Peerlist"
+                width={100}
+                height={28}
+                className="theme-img-dark h-[28px] w-auto"
+              />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="https://peerlist.io/api/v1/projects/embed/PRJH6A7QJD7ARJA9QIOQOP9GRGB77O?showUpvote=false&theme=light"
+                alt="Sooauth on Peerlist"
+                width={100}
+                height={28}
+                className="theme-img-light h-[28px] w-auto"
+              />
+            </a>
+          </div>
 
           <div className="flex items-center gap-4">
             {socialLinks.map((s) => (
@@ -141,6 +185,22 @@ export function SiteFooter() {
               className="font-mono text-xs text-fg-muted hover:text-fg"
             >
               Source ↗
+            </a>
+            <a
+              href={alternativeToUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-mono text-xs text-fg-muted hover:text-fg"
+            >
+              AlternativeTo ↗
+            </a>
+            <a
+              href={peerlistUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-mono text-xs text-fg-muted hover:text-fg"
+            >
+              Peerlist ↗
             </a>
             <a
               href={sooappsUrl}

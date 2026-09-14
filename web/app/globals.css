@@ -85,6 +85,10 @@
 :root[data-theme="dark"] .brand-logo-light { display: none; }
 :root[data-theme="dark"] .brand-logo-dark { display: block; }
 
+.theme-img-dark { display: none; }
+:root[data-theme="dark"] .theme-img-light { display: none; }
+:root[data-theme="dark"] .theme-img-dark { display: block; }
+
 @theme {
   --color-bg: var(--color-bg);
   --color-bg-subtle: var(--color-bg-subtle);
