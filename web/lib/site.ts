@@ -15,6 +15,9 @@ export const docsIntegrateUrl = `${siteUrl}/docs/integrate-oidc`;
 export const oidcDiscoveryUrl = `${authUrl}/.well-known/openid-configuration`;
 
 export const githubUrl = "https://github.com/sooapps/sooauth";
+export const alternativeToUrl =
+  "https://alternativeto.net/software/sooauth/about/?utm_source=badge&utm_medium=referral";
+export const peerlistUrl = "https://peerlist.io/uodev/project/sooauth";
 export const contactEmail = "info@sooapps.com";
 
 export const socialLinks = [

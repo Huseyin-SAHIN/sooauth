@@ -7,6 +7,21 @@ Use the hosted cloud at [auth.sooauth.com](https://auth.sooauth.com) or self-hos
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](LICENSE)
 [![Go Report Card](https://goreportcard.com/badge/github.com/sooapps/sooauth)](https://goreportcard.com/report/github.com/sooapps/sooauth)
 [![AI Ready](https://img.shields.io/badge/AI_Ready-llms.txt-success.svg)](https://auth.sooauth.com/llms.txt)
+[![AlternativeTo](https://img.shields.io/badge/AlternativeTo-Listed-0084c8?logo=alternativeto&logoColor=white)](https://alternativeto.net/software/sooauth/about/?utm_source=badge&utm_medium=referral)
+[![Peerlist](https://img.shields.io/badge/Peerlist-Launchpad-00AA45?logo=peerlist&logoColor=white)](https://peerlist.io/uodev/project/sooauth)
+
+<p align="left">
+  <a href="https://alternativeto.net/software/sooauth/about/?utm_source=badge&utm_medium=referral" target="_blank" rel="noopener noreferrer">
+    <img src="https://alternativeto.net/static/badges/badge-compact-color.svg" alt="Sooauth | AlternativeTo" width="140" height="45" style="height: 45px; width: auto;" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://peerlist.io/uodev/project/sooauth" target="_blank" rel="noreferrer">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://peerlist.io/api/v1/projects/embed/PRJH6A7QJD7ARJA9QIOQOP9GRGB77O?showUpvote=false&theme=dark">
+      <img src="https://peerlist.io/api/v1/projects/embed/PRJH6A7QJD7ARJA9QIOQOP9GRGB77O?showUpvote=false&theme=light" alt="Sooauth on Peerlist" height="45" style="height: 45px; width: auto;" />
+    </picture>
+  </a>
+</p>
 
 ---
 
