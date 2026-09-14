@@ -1,13 +1,11 @@
 package i18n
 
-// catalogs holds EN/TR strings for hosted auth pages, errors, emails, and client JS.
 var catalogs = map[string]map[string]string{
 	LangEN: en,
 	LangTR: tr,
 }
 
 var en = map[string]string{
-	// Page titles
 	"title.sign_in":         "Sign in",
 	"title.sign_up":         "Create account",
 	"title.reset_password":  "Reset password",
@@ -15,14 +13,12 @@ var en = map[string]string{
 	"title.verify_email":    "Verify email",
 	"title.security_center": "Security Center",
 
-	// Shared / layout
 	"layout.dashboard":   "Dashboard",
 	"layout.docs":        "Docs",
 	"layout.ai_prompt":   "AI prompt",
 	"layout.sooapps":     "A Sooapps product ↗",
 	"layout.theme_toggle": "Toggle dark/light theme",
 
-	// Auth split panel
 	"auth.info_heading":            "Authentication built for modern apps.",
 	"auth.info_desc":               "OpenID Connect & OAuth 2.1 identity server. Drop-in, self-hostable, with passkeys and multi-tenancy.",
 	"auth.feature_oidc":            "OIDC & OAuth 2.1",
@@ -55,7 +51,6 @@ var en = map[string]string{
 	"auth.password_placeholder":    "••••••••",
 	"auth.password_min_placeholder": "Minimum 8 characters",
 
-	// Forgot / reset / verify
 	"forgot.heading":       "Reset password",
 	"forgot.sub":           "Enter your email and we'll send a reset link or code.",
 	"forgot.submit":        "Send reset link",
@@ -70,7 +65,6 @@ var en = map[string]string{
 	"verify.already":       "This link was already used. Your email is verified — you can sign in.",
 	"verify.success":       "Email verified. You can sign in.",
 
-	// Account / security center
 	"account.heading":            "Security Center",
 	"account.sub":                "Manage sessions, passkeys, and password.",
 	"account.sessions":           "Active sessions",
@@ -93,7 +87,6 @@ var en = map[string]string{
 	"account.sign_out":           "Sign out",
 	"account.this_device":        "This device",
 
-	// Errors
 	"error.invalid_credentials":     "Wrong email or password.",
 	"error.email_not_verified":      "Check your inbox — verify your email before signing in.",
 	"error.social_failed":           "Google sign-in didn't finish. Close this tab and use the Google button again.",
@@ -104,7 +97,6 @@ var en = map[string]string{
 	"error.invalid_token":           "This link expired or was already used.",
 	"error.generic":                 "Something went wrong. Try again.",
 
-	// JS mirrors (same keys used by ClientDict)
 	"js.creating":                "Creating account…",
 	"js.signing_in":              "Signing in…",
 	"js.please_wait":             "Please wait…",
@@ -134,7 +126,6 @@ var en = map[string]string{
 	"js.generic_error":           "Something went wrong. Try again.",
 	"js.request_failed":          "Something went wrong. Try again.",
 
-	// Emails
 	
 	"account.connected":           "Connected accounts",
 	"account.connected_help":      "Use a connected Google or GitHub account to sign in to your platform account.",

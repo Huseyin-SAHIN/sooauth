@@ -23,7 +23,6 @@ function browserLang(): Lang {
   return "en";
 }
 
-/** Saved admin-lang, else browser language, else en. */
 export function getStoredLang(): Lang {
   try {
     const saved = localStorage.getItem(STORAGE_KEY);
@@ -45,7 +44,6 @@ export function setStoredLang(lang: Lang): void {
 type Vars = Record<string, string | number>;
 
 const en: Record<string, string> = {
-  // Nav
   "nav.group.workspace": "Workspace",
   "nav.group.configuration": "Configuration",
   "nav.overview": "Overview",
@@ -60,7 +58,6 @@ const en: Record<string, string> = {
   "nav.audit": "Audit",
   "nav.webhooks": "Webhooks",
 
-  // Common
   "common.loading": "Loading workspace…",
   "common.loadingAccount": "Loading account…",
   "common.save": "Save",
@@ -85,7 +82,6 @@ const en: Record<string, string> = {
   "common.securityCenter": "Security Center",
   "common.emDash": "—",
 
-  // Sidebar / profile
   "sidebar.currentProject": "Current project",
   "sidebar.newProject": "+ New project",
   "sidebar.docs": "Documentation ↗",
@@ -101,7 +97,6 @@ const en: Record<string, string> = {
   "profile.ariaLabel": "User account and theme settings",
   "project.promptName": "Project name",
 
-  // Overview
   "overview.users": "App users",
   "overview.sessions": "Active sessions",
   "overview.audit": "Audit events",
@@ -112,7 +107,6 @@ const en: Record<string, string> = {
   "overview.col.action": "Action",
   "overview.col.ip": "IP",
 
-  // Integration
   "integration.startTitle": "Start here",
   "integration.startDesc": "Connect your first app in five minutes. Keep this checklist open while you integrate.",
   "integration.check1": "Copy your issuer, client ID, and discovery URL below.",
@@ -138,7 +132,6 @@ const en: Record<string, string> = {
   "integration.saveUris": "Save URIs",
   "integration.saved": "Integration settings saved.",
 
-  // Providers
   "providers.notice": "Enable the providers you want to show on your login page. Expand a provider to configure custom OAuth credentials or toggle login on/off.",
   "providers.live": "Live",
   "providers.off": "Off",
@@ -172,7 +165,6 @@ const en: Record<string, string> = {
   "providers.customSaved": "{name} custom OAuth credentials saved and enabled.",
   "providers.switchedPlatform": "Switched {name} back to sooauth platform OAuth.",
 
-  // Project
   "project.title": "Project settings",
   "project.desc": "Auth rules for end users signing up through your app.",
   "project.name": "Project name",
@@ -196,13 +188,11 @@ const en: Record<string, string> = {
   "project.ruleNone": "no additional character rules",
   "project.ruleUsersSee": "Users will see this rule during sign-up.",
 
-  // Theme settings
   "theme.title": "Login page look",
   "theme.desc": "Customize the hosted sign-in and sign-up pages.",
   "theme.brandName": "Brand name",
   "theme.logoUrl": "Logo URL",
 
-  // Users / sessions / audit / webhooks
   "users.title": "{n} app users",
   "users.desc": "Manage end users who signed up through your product.",
   "users.empty": "No app users yet.",
@@ -244,7 +234,6 @@ const en: Record<string, string> = {
   "webhooks.noResponse": "No response",
   "webhooks.noDeliveries": "No delivery attempts yet. Send a test to inspect the request and response.",
 
-  // Billing
   "billing.currentTitle": "Current plan",
   "billing.currentDesc": "{plan} · {projects} project(s) · status {status}",
   "billing.betaNotice": "100% Free Public Beta:",
@@ -256,7 +245,6 @@ const en: Record<string, string> = {
   "billing.includedBeta": "Included in Beta",
   "billing.upgrade": "Upgrade",
 
-  // Email
   "email.title": "Transactional email delivery",
   "email.desc": "Send email verifications and password reset links from your own domain and email provider.",
   "email.enable": "Enable custom email delivery",

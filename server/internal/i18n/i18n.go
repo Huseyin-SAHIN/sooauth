@@ -10,7 +10,6 @@ const (
 	LangTR = "tr"
 )
 
-// Normalize returns a supported language code, defaulting to English.
 func Normalize(lang string) string {
 	lang = strings.ToLower(strings.TrimSpace(lang))
 	if i := strings.IndexAny(lang, "-_"); i > 0 {
@@ -24,7 +23,6 @@ func Normalize(lang string) string {
 	}
 }
 
-// Resolve picks locale: ?lang= → Accept-Language → tenantDefault → en.
 func Resolve(r *http.Request, tenantDefault string) string {
 	if r != nil {
 		if q := strings.TrimSpace(r.URL.Query().Get("lang")); q != "" {
@@ -45,13 +43,11 @@ func firstAcceptLanguage(header string) string {
 	if header == "" {
 		return ""
 	}
-	// First tag only (en/tr); ignore q-weights.
 	part := strings.Split(header, ",")[0]
 	part = strings.TrimSpace(strings.Split(part, ";")[0])
 	return part
 }
 
-// T returns the translation for key in lang, falling back to English then the key.
 func T(lang, key string) string {
 	lang = Normalize(lang)
 	if m, ok := catalogs[lang]; ok {
@@ -67,7 +63,6 @@ func T(lang, key string) string {
 	return key
 }
 
-// Dict returns all keys for the language (missing keys filled from English).
 func Dict(lang string) map[string]string {
 	lang = Normalize(lang)
 	src := catalogs[lang]
@@ -88,7 +83,6 @@ func Dict(lang string) map[string]string {
 	return out
 }
 
-// ClientDict returns strings used by hosted-page JavaScript.
 func ClientDict(lang string) map[string]string {
 	lang = Normalize(lang)
 	out := make(map[string]string)
